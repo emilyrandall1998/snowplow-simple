@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,39 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.products div {
+  width: calc(100% / 4 - 20px);
+  padding: 10px;
+  margin: 10px;
+}
+
+.products img {
+  width: 100%;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+}
+
+.product {
+  padding: 40px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px;
+}
+
+header {
+  background-color: pink;
+  height: 70px;
+  padding-top: 10px;
 }
