@@ -71,7 +71,7 @@ button {
 }
 
 header {
-  background-color: pink;
-  height: 70px;
-  padding-top: 10px;
+  background: linear-gradient(#e66465, #9198e5);
+  height: 100px;
+  padding-top: 25px;
 }

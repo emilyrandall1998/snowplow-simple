@@ -1,30 +1,30 @@
 import React, { useState } from 'react';
 
-const HOME_GARDEN = 'Home and Garden';
-const UTILITY = 'Utility';
+const SHOES = 'Shoes';
+const DRESSES = 'Dresses';
 
 export default function Products({ setCart, cart }) {
   const [products] = useState([
     {
-      category: UTILITY,
-      name: 'AA Battery',
-      cost: 2.99,
+      category: DRESSES,
+      name: 'Green Dress',
+      cost: 15.99,
       image:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ5-QAul_NfAs-s0XW9M087xWyPOGWvbfYjmqSl0QXabZRSYoid47i7kISiAteyIh0YOci5mtQ&usqp=CAc',
+        'https://media.missguided.com/i/missguided/DD926543_03',
     },
     {
-      category: HOME_GARDEN,
-      name: 'Blanket',
+      category: SHOES,
+      name: 'Sandals',
       cost: 19.99,
       image:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSpwdYDmUL_ZEqhLV7ZWRdQAU7DGcGaxtCt7SrTlL9umrQs2Un7rj9Nbb9Vq01RtEfA0eAVmdt-&usqp=CAc',
+        'https://i1.adis.ws/i/boohooamplience/agg76766_black_xl?$product_image_main_mobile$&fmt=webp',
     },
     {
-      category: UTILITY,
-      name: 'Hammer',
-      cost: 9.99,
+      category: DRESSES,
+      name: 'Blue Dress',
+      cost: 19.99,
       image:
-        'https://www.oxtools.co.uk/media/catalog/product/cache/b6a881ddf87baeb431416117cd7f8416/o/x/ox-t085116.jpg',
+        'https://cdn.cliqueinc.com/posts/286696/casual-summer-dresses-286696-1586464229610-main.700x0c.jpg',
     }
   ]);
 
@@ -45,7 +45,7 @@ export default function Products({ setCart, cart }) {
     setCart(newCart);
   };
 
-  const [category, setCategory] = useState(HOME_GARDEN);
+  const [category, setCategory] = useState(SHOES);
 
   const getProductsInCategory = () => {
     return products.filter(
@@ -58,8 +58,8 @@ export default function Products({ setCart, cart }) {
       <h1>Products</h1>
       Select a category <br></br><br></br>
       <select onChange={(e) => setCategory(e.target.value)}>
-        <option value={HOME_GARDEN}>{HOME_GARDEN}</option>
-        <option value={UTILITY}>{UTILITY}</option>
+        <option value={SHOES}>{SHOES}</option>
+        <option value={DRESSES}>{DRESSES}</option>
       </select>
       <div className="products">
         {getProductsInCategory().map((product, idx) => (
