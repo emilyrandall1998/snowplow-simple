@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useAnalytics } from 'use-analytics'
 
 const SHOES = 'Shoes';
 const DRESSES = 'Dresses';
 
 export default function Products({ setCart, cart }) {
+  const { track } = useAnalytics()
   const [products] = useState([
     {
       category: DRESSES,
@@ -29,6 +31,11 @@ export default function Products({ setCart, cart }) {
   ]);
 
   const addToCart = (product) => {
+    console.log('added to cart')
+    track('product purchased', {
+      name: product.name,
+      price: product.cost
+    })
     let newCart = [...cart];
     let itemInCart = newCart.find(
       (item) => product.name === item.name
