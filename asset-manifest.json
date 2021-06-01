@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/snowplow-simple/static/css/main.4407ac07.chunk.css",
+    "main.js": "/snowplow-simple/static/js/main.21cf2b94.chunk.js",
+    "main.js.map": "/snowplow-simple/static/js/main.21cf2b94.chunk.js.map",
+    "runtime-main.js": "/snowplow-simple/static/js/runtime-main.1052249a.js",
+    "runtime-main.js.map": "/snowplow-simple/static/js/runtime-main.1052249a.js.map",
+    "static/js/2.8d4a0dc1.chunk.js": "/snowplow-simple/static/js/2.8d4a0dc1.chunk.js",
+    "static/js/2.8d4a0dc1.chunk.js.map": "/snowplow-simple/static/js/2.8d4a0dc1.chunk.js.map",
+    "static/js/3.d84f4440.chunk.js": "/snowplow-simple/static/js/3.d84f4440.chunk.js",
+    "static/js/3.d84f4440.chunk.js.map": "/snowplow-simple/static/js/3.d84f4440.chunk.js.map",
+    "index.html": "/snowplow-simple/index.html",
+    "static/css/main.4407ac07.chunk.css.map": "/snowplow-simple/static/css/main.4407ac07.chunk.css.map",
+    "static/js/2.8d4a0dc1.chunk.js.LICENSE.txt": "/snowplow-simple/static/js/2.8d4a0dc1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1052249a.js",
+    "static/js/2.8d4a0dc1.chunk.js",
+    "static/css/main.4407ac07.chunk.css",
+    "static/js/main.21cf2b94.chunk.js"
+  ]
+}
